@@ -1,47 +1,24 @@
-```
-┌───────────────────────────────────────────────┐
-                                       _       
-     __ _  ___   ___  _ __ _ __ ___   (_) ___  
-    / _` |/ _ \ / _ \| '__| '_ ` _ \  | |/ _ \ 
-   | (_| | (_) | (_) | |  | | | | | |_| | (_) |
-    \__, |\___/ \___/|_|  |_| |_| |_(_)_|\___/ 
-    |___/                                      
-			     🌩 𝘼𝙣𝙮𝙤𝙣𝙚 𝙘𝙖𝙣 𝙙𝙚𝙫𝙚𝙡𝙤𝙥!
-└───────────────────────────────────────────────┘
-```
+# gogotyping
 
-# goormIDE
-Welcome to goormIDE!
+## 기획
+타자연습과 영문법 공부를 동시에 수행하는 애플리케이션을 기획하였습니다.  
+장고 DRF를 사용하여 DB에 집어넣은 영단어를 URL로 조회하여  
+동적으로 화면에 뿌려주면 타자로 입력하여 점수를 획득합니다.  
+아래와 같은 기능이 포함됩니다.  
 
-goormIDE is a powerful cloud IDE service to maximize productivity for developers and teams.  
-**DEVELOP WITH EXCELLENCE**  
+- 영단어의 작성, 읽기, 수정, 삭제
+- 회원가입, 로그인 및 인증
+- 네이버 아이디로 소셜로그인
+- 카테고리별(1:N) 단어 출력
 
-`Happy coding! The goormIDE team`
+## 사용한 기술들(DB, 라이브러리 등등)
 
+## 프로젝트 구성
 
-## 🔧 Tip & Guide
+## ER다이어그램(DB구성)
 
-* Command feature
-	* You can simply run your script using the shortcut icons on the top right.
-	* Check out `PROJECT > Common/Build/Run/Test/Find Command` in the top menu.
-	
-* Get URL and Port
-	* Click `PROJECT > URL/PORT` in top menu bar.
-	* You can get default URL/Port and add URL/Port in the top menu.
+## 코드 리뷰
 
-* Useful shortcut
-	
-| Shortcuts name     | Command (Mac) | Command (Window) |
-| ------------------ | :-----------: | :--------------: |
-| Copy in Terminal   | ⌘ + C         | Ctrl + Shift + C |
-| Paste in Terminal  | ⌘ + V         | Ctrl + Shift + V |
-| Search File        | ⌥ + ⇧ + F     | Alt + Shift + F  |
-| Terminal Toggle    | ⌥ + ⇧ + B     | Alt + Shift + B  |
-| New Terminal       | ⌥ + ⇧ + T     | Alt + Shift + T  |
-| Code Formatting    | ⌥ + ⇧ + P     | Alt + Shift + P  |
-| Show All Shortcuts | ⌘ + H         | Ctrl + H         |
-
-## 💬 Support & Documentation
-
-Visit [https://ide.goorm.io](https://ide.goorm.io) to support and learn more about using goormIDE.  
-To watch some usage guides, visit [https://help.goorm.io/en/goormide](https://help.goorm.io/en/goormide)
+## 느낀점
+장고 DRF의 사용법을 알게 되었습니다.  
+소셜로그인 기능을 구현하는 방법을 알게되었습니다.
