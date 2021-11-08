@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>고고타이핑 GoGotyping</title>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" type="text/css" href="{% static 'bulma/css/style.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'custom/css/custom.css' %}" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+        />
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"
+            integrity="sha512-VZ6m0F78+yo3sbu48gElK4irv2dzPoep8oo9LEjxviigcnnnNvnTOJRSrIhuFk68FMLOpiNz+T77nNY89rnWDg=="
+            crossorigin="anonymous"
+        ></script>
+    </head>
+
+    <body>
+        <section class="hero is-info is-fullheight">
+            <div class="hero-head is-info">
+                <nav class="navbar">
+                    <div class="container">
+                        <div class="navbar-brand">
+                            <a class="navbar-item" href="../">
+                                <h1 class="title is-size-2 gfont">
+                                    고고타이핑
+                                </h1>
+                            </a>
+                        </div>
+                        <div id="navbarMenu" class="navbar-menu">
+                            <div class="navbar-end">
+                                <span class="navbar-item">
+                                    <a class="button is-white is-outlined" href="#">
+                                        <span class="icon">
+                                            <i class="fa fa-home"></i>
+                                        </span>
+                                        <span class="gfont">Home</span>
+                                    </a>
+                                </span>
+                                {% if user.is_authenticated %}
+                                <span class="navbar-item">
+                                    <a
+                                        class="button is-white is-outlined"
+                                        href="/accounts/logout"
+                                    >
+                                        <span class="icon">
+                                            <i class="fa fa-superpowers"></i>
+                                        </span>
+                                        <span class="gfont">Sign Out</span>
+                                    </a>
+                                </span>
+                                {% else %}
+                                <span class="navbar-item">
+                                    <a
+                                        class="button is-white is-outlined"
+                                        href="/accounts/login"
+                                    >
+                                        <span class="icon">
+                                            <i class="fa fa-superpowers"></i>
+                                        </span>
+                                        <span class="gfont">Sign In</span>
+                                    </a>
+                                </span>
+                                {% endif %}
+                                
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="hero-body {% if not request.get_full_path == '/' %} box {% endif %}">
+                {% block content %} {% endblock %}
+            </div>
+        </section>
+        <script src="{% static 'custom/js/custom.js' %}"></script>
+    </body>
+</html>
