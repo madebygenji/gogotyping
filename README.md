@@ -1,4 +1,5 @@
 # gogotyping
+프로젝트 링크 : https://gogotyping-bsdlp.run.goorm.io/
 
 ## 기획
 타자연습과 영단어 공부를 동시에 수행하는 애플리케이션을 기획하였습니다.  
