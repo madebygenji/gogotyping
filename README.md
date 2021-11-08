@@ -12,12 +12,15 @@
 - 카테고리별(1:N) 단어 출력
 
 ## 사용한 기술들(DB, 라이브러리 등등)
+- Django Rest Framework
+- Django allauth(로그인, 회원가입, 네이버 아이디로 로그인)
+- axios(동적으로 영단어 뿌려주기)
 
 ## 프로젝트 구성
+<img width="203" alt="스크린샷 2021-11-08 오전 9 35 03" src="https://user-images.githubusercontent.com/72113538/140694602-674ffac2-fa25-403b-88b3-e3d4d3db5f66.png">
 
 ## ER다이어그램(DB구성)
-
-## 코드 리뷰
+<img width="911" alt="스크린샷 2021-11-08 오후 3 31 04" src="https://user-images.githubusercontent.com/72113538/140694591-91d6e14e-b8bc-4d5f-a8b7-c8d80ed36005.png">
 
 ## 느낀점
 장고 DRF의 사용법을 알게 되었습니다.  
